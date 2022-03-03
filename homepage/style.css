@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'Gotham HTF Book';
+    src: url('GothamHTF-Book.woff2') format('woff2'),
+        url('GothamHTF-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url('GothamHTF-Bold.woff2') format('woff2'),
+        url('GothamHTF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+.page-width{
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gotham HTF';
+
+}
+:root{
+    --text-color:#fff;
+    --heading-color:#000;
+}
+/* Mobile toggle */
+.togel{
+    position: absolute;
+    padding: 10px 0 0 20px;
+    display: none;
+    z-index: 9
+}
+.togel i:last-child{
+    position: absolute;
+    left: 20px;
+    visibility: hidden;
+}
+.banner-contianer{
+    position: relative;
+}
+.togel i{
+    font-size: 30px;
+    color:var(--text-color);
+    box-shadow: 0px 0px 10px 1px rgba(7, 7, 7, 0.233);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b2adad;
+}
+/* header */
+.header-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+.header-nav .navbar {
+    list-style: none;
+}
+.header-nav .navbar a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    font-family: 'Gotham HTF Book';
+}
+.header-nav .navbar a::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    display:inline-block;
+    background-color: var(--heading-color);
+    transition: all .3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.header-nav .navbar a:hover::after{
+ width: 100%;
+}
+.header-nav .navbar a:hover{
+    color: rgba(0, 0, 0, 0.698);
+}
+.header-nav .navbar .item_list {
+    line-height: 2;
+}
+.banner-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-heading h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+/* image with Text */
+.img-grid{
+    display: flex;
+}
+.img-item{
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+.img-item .banner-heading h2,.img-item .banner-heading h5{
+font-size: 60px;
+color: var(--text-color);
+}
+.img-item .banner-heading h5{
+    font-size: 30px;
+}
+.photos-heading{
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.photos-heading span{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gotham HTF Book';
+
+}
+.photos-container{
+    display: flex;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+.photos-items{
+    width: calc(100% / 5);
+}
+.photos-items img{
+    display: block;
+    width: 100%;
+}
+/* Footer Section */
+.footer-container{
+    display: flex;
+}
+.footer-left, .footer-right{
+    width: 50%;
+}
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-left h4{
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-left-inner input{
+    width: 70%;
+    padding: 10px 5px;
+}
+.footer-left-inner span{
+    text-transform: uppercase;
+    background: var(--heading-color);
+    color: white;
+    padding: 10px;
+    transition: .3s;
+}
+.footer-left-inner span:hover{
+    background: rgba(0, 0, 0, 0.836);
+}
+.footer-icons ul{
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+}
+.footer-icons li a i{
+    color: var(--heading-color);
+    padding-right: 30px;
+    font-size: 25px;
+}
+.footer-right-main h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.footer-right-main ul{
+    list-style: none;
+}
+.footer-right-main ul li{
+    margin: 8px 0;
+}
+.footer-right-main ul li a{
+    text-decoration: none;
+    color: var(--heading-color);
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Gotham HTF Book';
+
+}
+.footer-right-main ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    display: block;
+    background-color: var(--heading-color);
+    transition: .3s;
+    position: absolute;
+}
+.footer-right-main ul li a:hover::after{
+    width: 100%;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.footer-bottom span{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Gotham HTF Book';
+
+}
+/* Responsive */
+@media screen and (max-width:1024px) {
+    .banner-heading h2{
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .img-item .banner-heading h2{
+        font-size: 25px;
+    }
+    .img-item .banner-heading h5{
+    font-size: 16px;
+    }
+    .togel{
+        display: block;
+        cursor: pointer;
+    }
+    .header-nav {
+        width: 100%;
+        left: 0;
+        z-index: 9;
+        position: fixed;
+        height: 100vh;
+    }
+    .navbar{
+        padding-top: 45px;
+        padding-left: 20px;
+        height: 100vh;
+        background-color: var(--heading-color);
+        top: -101%;
+        position: relative;
+        transition: all .3s;
+    }
+    .active .navbar{
+        top: 0;
+    }
+    .active .togel i:first-child{
+        display: none;
+    }
+    .active .togel i:last-child{
+        visibility: visible;
+    }
+    .header-nav .navbar .item_list a{
+        color: #fff;
+    }
+    .photos-items{
+        width: calc(100% / 3);
+    }
+}
+@media screen and (max-width:500px) {
+    .img-item .banner-heading h2{
+        font-size: 20px;
+    }
+    .photos-heading span{
+        font-size: 15px;
+    }
+    .photos-items{
+        width: calc(100% / 2);
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+    }
+    .footer-left, .footer-right{
+        width: 100%;
+    }
+    .footer-right{
+        justify-content: flex-start;
+    }
+    .footer-right-main h4{
+        font-size: 15px;
+    }
+    .footer-left h4{
+        font-size: 15px;
+    }
+    .footer-left-inner input{
+        width: 80%;
+    }
+    .footer-icons ul{
+        justify-content: center;
+    }
+    .footer-bottom{
+        margin-top: 20px;
+    }
+    .footer-bottom span{
+        font-size: 10px;
+    }
+}
